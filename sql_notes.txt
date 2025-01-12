@@ -1,0 +1,44 @@
+SQL - Structured Query Language 
+
+SELECT - identifies the columns (or data) from a database
+Select Specific columns 
+Notes: Only get certain columns. Makes it easier to read the results(aka aren't you overwhelmed with all the columns)
+
+FROM - identifies the table we are connecting to
+* - special command to select all the columns
+ 
+
+DISTINCT - select unique datas/no repetition
+ex: SELECT DISTINCT
+	job_title_short 
+FROM 
+	job_postings_fact;
+SELECT DISTINCT
+	salary_year_avg
+FROM
+	job_postings_fact;
+
+WHERE - sets condition for the query. Filter out the query
+ex: job_title = 'Data Analyst'
+
+COMMENTS - --Single Line Comment 
+notes: -- -a single line comment(most common)
+Why? 
+Helps make the query more readable
+Document your query
+Write short comment, like at the end of your line
+/**/ MULTI-LINE COMMENT
+
+ORDER BY - aggragate the data 
+ex: ASC, DESC
+
+LIMIT - 
+
+Order to write commands
+SELECT column1,column2,...
+FROM table_name
+WHERE condition
+GROUP BY column
+HAVING condition
+ORDER BY column1 [ASC|DESC]...
+LIMIT number;

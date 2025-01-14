@@ -14,3 +14,11 @@ ex: WHERE
 Notes:
 AND - only shows records where all contributions are true
 Can have multiple AND conditions
+
+OR 
+ex: WHERE
+	salary_year_avg > 100000
+	OR job_title = 'Data Analyst'
+OR - only shows records when any of the conditions are true
+Can have multiple OR conditions
+

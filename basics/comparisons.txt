@@ -22,3 +22,12 @@ ex: WHERE
 OR - only shows records when any of the conditions are true
 Can have multiple OR conditions
 
+BETWEEN
+ex: WHERE
+	salary_year_avg BETWEEN 60000 AND 90000
+Notes: 
+BETWEEN - gets values within  a given range
+Alternative to using AND, <= and >=
+	e.g., salary_year_avg >= 60000 AND salary_year_avg <= 80000
+
+

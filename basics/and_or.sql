@@ -14,4 +14,18 @@ WHERE
 ORDER BY
 	job_location;
 
+-- OR
+SELECT 
+	job_id,
+	job_title_short,
+	job_via,
+	job_location
+FROM 
+	job_postings_fact
+WHERE
+	salary_year_avg >= 50000
+	OR job_via = 'LinkedIn'
+ORDER BY 
+	job_via;
+
 		

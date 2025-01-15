@@ -42,3 +42,5 @@ GROUP BY column
 HAVING condition
 ORDER BY column1 [ASC|DESC]...
 LIMIT number;
+
+

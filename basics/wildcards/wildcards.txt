@@ -1,0 +1,19 @@
+Wildcards
+	WHERE 
+		job_title LIKE '%Data%'
+Notes:
+Wildcards - used to substitute one or more characters in a string
+Wildcards are used with the LIKE operator
+All of this(i.e., LIKE, %, and _)is used in the WHERE clause
+
+%
+	WHERE 
+		job_title LIKE '%Analyst%'	
+Notes:
+% - Represents zero, one, or more characters
+
+_
+	WHERE
+		job_title LIKE 'Data_Analyst'
+Notes:
+_ - represents one, single character

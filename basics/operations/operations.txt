@@ -1,0 +1,17 @@
+Example Locations Used:
+1.SELECT Clause
+	For performing calcutations on data retrieved from the database.
+	Example: SELECT salary, salary * 0.1 AS bonus FROM employees;
+2.WHERE Clause
+	For filtering data based on conditions that may involve arithmetic or 
+	logical operations.
+	Example: SELECT * FROM orders WHERE (quantity * unit_price) > 100;
+3.ORDER BY Clause
+	For sorting the results based on expressions involving operations.
+	Example: SELECT name, age (current_date - birth_date) / 365 AS age_years
+	FROM people ORDER BY (current_date - birth_date) / 365;
+4.GROUP BY and HAVING Clauses
+	For grouping rows that have the same values in specified columns and filtering
+	groups with conditions involving operations.
+	Example: SELECT department, SUM(salary) FROM employees GROUP BY  department 
+	HAVING SUM(salary) > 100000;

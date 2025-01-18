@@ -1,0 +1,22 @@
+ADDITION
+hours_rate + 5
+Notes: 
++ - add 
+Scenario:
+I want to see what happens to the rates if we increase the price.
+	Increase hourly rates by 5
+	Why? See how budget would be affected if raise is given
+Query:
+SELECT
+	project_company AS Company,
+	nerd_id AS ID,
+	nerd_role AS Role,
+	hours_spent AS 'Hours',
+	hours_rate AS 'Original Rate',
+	hours_rate + 5 AS rate_hike,
+	hours_rate - 3 AS 'Rate Drop',
+	(hours_rate + 5) * hours_spent AS 'Total Hours'
+FROM
+	invoices_fact
+WHERE 
+	hours_spent > 1000;

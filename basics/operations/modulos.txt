@@ -1,0 +1,6 @@
+%
+hours_spent % 8 AS extra_hours
+Notes:
+% - modulos(returns the remainder of a division)
+If an employee worked 10 hours, using 10 % 8 would give 2, indicating the employee
+worked 2 hours beyond the standard 8-hour workday

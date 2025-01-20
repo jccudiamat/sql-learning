@@ -7,6 +7,6 @@ SELECT
 	activity_id,
 	hours_spent,
 	hours_rate,
-	hours_spent / hours_rate AS 'Efficiency ratio'
+	hours_spent % hours_rate AS 'Overtime'
 FROM
 	invoices_fact 

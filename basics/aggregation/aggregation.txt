@@ -1,0 +1,7 @@
+Aggregation
+Aggregation Functions: These functions compute a single result from input values.
+SUM(): Adds together all values in a specific column.
+COUNT(): Counts the number of rows that match a specified criterion.
+AVG(): Calculates the average value of a numeric column.
+MAX(): Finds the maximum value in a set of values.
+MIN(): Finds the minimum value in a set of values.

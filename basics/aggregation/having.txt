@@ -1,0 +1,20 @@
+HAVING
+	AVG(salary_year_avg) > 75000
+Notes:
+HAVING - filter query based on aggregate functions and groupings
+Used because you can't use aggregate functions in WHERE
+Ex:
+SELECT 
+	job_title_short AS Jobs,
+	COUNT(job_title_short) AS job_count, 
+	AVG(salary_year_avg) AS salary_avg,
+	MIN(salary_year_avg) AS salary_min,
+	MAX(salary_year_avg) AS salary_max
+FROM 
+	job_postings_fact
+GROUP BY
+	job_title_short
+HAVING
+	COUNT(job_title_short) > 100
+ORDER BY
+	salary_avg;

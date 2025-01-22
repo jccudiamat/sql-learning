@@ -1,0 +1,10 @@
+SUM
+	SUM(hours_spent)
+Notes: 
+SUM - gets the total of a column
+
+Ex:
+SELECT
+	SUM(salary_year_avg) AS 'Salary Total'
+FROM
+	job_postings_fact;

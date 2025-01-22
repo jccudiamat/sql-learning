@@ -7,7 +7,7 @@ COUNT(*) - Gives the total number of rows in the table
 Ex:
 SELECT
 	SUM(salary_year_avg) AS salary_sum,
-	COUNT(*) AS row_count
+	COUNT(*) 'Row Count'
 FROM
 	job_postings_fact;
 

@@ -1,0 +1,8 @@
+SELECT
+	MIN(salary_year_avg) AS salary_min,
+	MAX(salary_year_avg) AS salary_max
+FROM 
+	job_postings_fact
+WHERE
+	job_title_short = 'Data Analyst';
+ 

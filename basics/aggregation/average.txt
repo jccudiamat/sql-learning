@@ -1,0 +1,14 @@
+AVG
+	AVG(salary_year_avg)
+Notes:
+AVG - average of a column
+
+Ex:
+SELECT 
+	AVG(salary_year_avg) AS 'Average Salary',
+	SUM(salary_year_avg) AS 'Salary Total',
+	COUNT(job_id) AS 'Jobs Available'
+FROM
+	job_postings_fact
+WHERE
+	job_title_short = 'Data Scientist';

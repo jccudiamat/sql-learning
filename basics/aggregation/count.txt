@@ -10,4 +10,14 @@ SELECT
 	COUNT(*) 'Row Count'
 FROM
 	job_postings_fact;
+Count Unique Rows
+Notes:
+COUNT(DISTINCT colum) - gives the distinct count of rows that matches the 
+specified criteria.
+
+Ex:
+SELECT
+	COUNT(DISTINCT job_title_short) AS job_title_total
+FROM
+	job_postings_fact;
 

@@ -1,0 +1,12 @@
+Problem: In the job_postings_fact table count the total number of job postings that
+offer  health insurance. Use the job_health_insurance column to determin if a job
+posting offers health insurance(TRUE means it does offer health insurance)
+
+Answer:
+
+SELECT 
+    SUM(job_health_insurance) AS Insurance
+FROM 
+	job_postings_fact
+WHERE
+	job_health_insurance <> 0;

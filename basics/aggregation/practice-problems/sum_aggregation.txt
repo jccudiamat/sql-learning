@@ -5,7 +5,7 @@ posting offers health insurance(TRUE means it does offer health insurance)
 Answer:
 
 SELECT 
-    SUM(job_health_insurance) AS Insurance
+   	 SUM(job_health_insurance) AS Insurance
 FROM 
 	job_postings_fact
 WHERE

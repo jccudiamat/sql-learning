@@ -3,7 +3,6 @@ available for each country. Use the job_country column to group the job postings
 and count the number of job postings(job_id) within each country group.
 
 SELECT 
-	job_id AS ID,
 	job_country AS Country,
 	COUNT(job_id) AS 'Job Count'
 FROM

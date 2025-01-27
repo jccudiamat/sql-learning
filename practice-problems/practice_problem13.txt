@@ -1,0 +1,18 @@
+Question:
+Calculate the current month's total earnings per project
+Calculate a scenario where the hourly rate increases by $5
+Why?
+	See the difference if we raised the hourly rate 
+	Figure out what's a reasonable raise
+Solution:
+SELECT
+	project_id,
+	hours_spent,
+	hours_rate AS rate_original,
+	SUM(hours_spent * hours_rate) AS project_original_cost,
+	hours_rate + 5 AS rate_hike,
+	SUM(hours_spent * (hours_rate + 5)) AS project_projected_cost
+FROM 
+	invoices_fact
+GROUP BY 
+	project_id;

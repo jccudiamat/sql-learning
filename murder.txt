@@ -1,0 +1,8 @@
+Security footage shows that there were 2 witnesses. The first witness lives 
+at the last house on "Northwestern Dr". The second witness, named Annabel, 
+lives somewhere on "Franklin Ave".
+
+date: 20180115
+city: SQL City
+
+16371	Annabel Miller	490173	103	Franklin Ave	318771143

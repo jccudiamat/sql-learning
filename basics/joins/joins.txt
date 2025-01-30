@@ -1,0 +1,8 @@
+LEFT JOIN
+Left+overlap with right
+
+RIGHT JOIN
+
+INNER JOIN
+
+FULL OUTER JOIN

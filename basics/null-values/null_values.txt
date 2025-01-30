@@ -1,0 +1,8 @@
+NULL values
+	salary_year_avg
+	NULL
+Notes:
+NULL - a field with no value
+	Note: This differs from a field with a 0 value or a field containing
+spaces(i.e., " ")
+The following commands are used within a WHERE or HAVING clause.

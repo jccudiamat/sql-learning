@@ -6,3 +6,15 @@ NULL - a field with no value
 	Note: This differs from a field with a 0 value or a field containing
 spaces(i.e., " ")
 The following commands are used within a WHERE or HAVING clause.
+
+SELECT 
+	job_title_short,
+	job_location,
+	job_via,
+	salary_year_avg
+FROM 
+	job_postings_fact
+WHERE 
+	salary_year_avg IS NOT NULL
+ORDER BY
+	salary_year_avg;

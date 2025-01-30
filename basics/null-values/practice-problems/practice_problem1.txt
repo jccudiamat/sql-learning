@@ -1,0 +1,15 @@
+Question:
+We're going to check that all skills do not have a category assigned to it. This can 
+be used for validating data. So, get all skills from the skills_dim table that don't
+have a type classification assigned to them. Return the skill_id and skills.
+
+Ans:
+
+SELECT
+	skill_id,
+	skills,
+    	type
+FROM
+	skills_dim
+WHERE
+	type IS NULL;

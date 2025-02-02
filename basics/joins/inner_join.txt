@@ -10,4 +10,4 @@ INNER JOIN
 	job_postings.job_id = skills_to_job.job_id
 INNER JOIN 
 	skills_dim AS skills ON 
-    skills_to_job.skill_id = skills.skill_id;
+    	skills_to_job.skill_id = skills.skill_id;

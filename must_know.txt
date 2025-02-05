@@ -1,0 +1,3 @@
+Window functions 
+CTEs common table expressions
+Subqueries

@@ -18,7 +18,7 @@ Order of Execution
 
 Why this order?
 This sequence ensures SQL queries are processed efficiently and logically.
-
+  
 Data soures and joins are defined first; filtering happens early to reduce the amount 
 of data processed, grouping and aggregation follow, then specific fields are selected,
 and finally, the output is ordered and limited.

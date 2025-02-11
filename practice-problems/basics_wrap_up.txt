@@ -1,0 +1,25 @@
+Question:
+Find the average salary and number of job postings for each skill for this: 
+Hint: Use LEFT JOIN to combine skills_dim, skills_job_dim, and job_postings_fact tables.
+Why? Understand the demand and pay for skills
+
+Solution:
+SELECT
+	skills_job.skill_id,
+	skill.skills,
+    jobs.job_title_short,
+    COUNT(jobs.job_title_short) AS 'Job Count',
+    AVG(jobs.salary_year_avg) AS 'Average Salary'
+FROM 
+	job_postings_fact as jobs
+LEFT JOIN 
+	skills_job_dim as skills_job ON 
+	jobs.job_id = skills_job.job_id
+LEFT JOIN
+	skills_dim as skill ON
+	skills_job.skill_id = skill.skill_id
+WHERE 
+	skills_job.skill_id IS NOT NULL
+GROUP BY 
+	skill.skills
+

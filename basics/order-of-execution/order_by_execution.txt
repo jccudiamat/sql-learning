@@ -15,3 +15,14 @@ Order of Execution
 -Sorts the result set based on specified columns/values.
 8.LIMIT/OFFSET
 -Limits the number of rows returned, often used for pagination.
+
+Why this order?
+This sequence ensures SQL queries are processed efficiently and logically.
+
+Data soures and joins are defined first; filtering happens early to reduce the amount 
+of data processed, grouping and aggregation follow, then specific fields are selected,
+and finally, the output is ordered and limited.
+
+This flow reflects the logical processing order necessary to construct the final dataset
+and optimization principles database use to execute queries efficiently.
+

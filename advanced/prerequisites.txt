@@ -1,0 +1,8 @@
+What's a code editor (of IDE)?
+a.Code Editor - A digital notepad for writing and organizing programming code.
+Easy editing, checking, and running code snippets.
+b.Integrate Development Environment(IDE) - A supercharged code editor with tools for
+writing, testing, fixing code all in one place. Like a code editor wito a toolbet.
+
+VS Code is a code editor packed with features like an IDE: debugging, syntax highlighting,
+and extensions for various programming tasks.
